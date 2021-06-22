@@ -15,6 +15,7 @@ class TokenController extends Controller
     public function index()
     {
         $tokens = Token::all();
+       // dd($tokens);
         return view(' token.index', compact('tokens'));
     }
 

@@ -15,11 +15,11 @@ class CreateTokensTable extends Migration
     {
         Schema::create('tokens', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger(' user_id');
-            $table->string(' name');
-            $table->string(' hash');
-            $table->string(' prev');
-            $table->string(' data');
+            $table->unsignedInteger('user_id');
+            $table->string('name');
+            $table->string('hash');
+            $table->string('prev');
+            $table->string('data');
             $table->string('price');
             $table->timestamps();
         });

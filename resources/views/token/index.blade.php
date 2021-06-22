@@ -15,11 +15,13 @@
                             @endif
                         </div>
                         <div class="text-center">
-                            @foreach($tokens->chunk(6) as $three)
-                                @foreach($three as $token)
-                                  Token: {{ $token }}
-                                @endforeach
-                                    <br><hr>
+                            @foreach($tokens as $token)
+                                Token name:  {{ $token->name }}<br>
+                                   Hash:   {{ $token->hash }}<br>
+                                    Prev: {{ $token->prev }}<br>
+                                    Data: {{ $token->data }}<br>
+                                    Price: {{ $token->price }} ETH
+                                <br><hr>
                             @endforeach
                         </div>
                     </div>
