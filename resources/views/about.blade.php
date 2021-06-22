@@ -6,7 +6,7 @@
             <div class="col-md-12" style="border-color: blue">
                 <div class="card" style="border-color: blue">
                     <div class="card-body">
-                        <h2 class="text-center" style="color: red">BE YOU BUT ALL WE ARE.</h2>
+                        <h2 class="text-center" style="color: blue">BE YOU BUT ALL WE ARE.</h2>
                         <hr>
                         <h4>
                             1 point : New technologies are usually most vulnerable in the nascent stages.

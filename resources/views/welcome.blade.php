@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card" style="border-color: blue">
                     <div class="card-body">
-                        <h1 class="text-center" style="color: red">WELCOME TO NFTUBES</h1>
+                        <h1 class="text-center" style="color: blue">WELCOME TO NFTUBES</h1>
                         <h3 class="text-center">This is the place to share your NFT tokens</h3>
                         <hr>
                         <div class="text-center">
