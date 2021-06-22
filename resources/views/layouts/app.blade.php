@@ -60,6 +60,7 @@
                         <li>
                             <a href="{{ url('/') }}" class="btn btn-primary">Home</a>
                             <a href="{{ route('home') }}" class="btn btn-primary">Profile</a>
+                            <a href="{{ route('token') }}" class="btn btn-primary">Token</a>
                             <a href="{{ route('about') }}" class="btn btn-primary">About</a>
                         </li>
                         <li class="nav-item dropdown">
