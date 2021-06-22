@@ -27,8 +27,9 @@
                             <input type="text" class="form-control" id="name" name="name"  placeholder="Sasho Token">
                         </div>
                         <div class="form-group">
-                            <label for="hash">Add hash</label>
-                            <input type="text" class="form-control" id="hash" name="hash"  placeholder="3C9DEF41D99A7A3B80EC83F342B774D60BFEC5E51EB675737F6E63BDCF37F02A">
+                            <label for="hash">Add hash exp: 3C9DEF41D99A7A3B80EC83F342B774D60BFEC5E51EB675737F6E63BDCF37F02A </label>
+                            <a href="https://passwordsgenerator.net/sha256-hash-generator/" class="btn btn-primary" target="_blank">Generate hash</a>
+                            <input type="text" class="form-control" id="hash" name="hash_token"  placeholder="64 symbols">
                         </div>
                         <div class="form-group">
                             <label for="prev">prev</label>
