@@ -42,19 +42,14 @@
                                 @foreach($links as $link)
                                     <tr>
                                         <td>
-                                            <a href="{{ $link->link }}"
+                                            <a href="https://{{ $link->link }}"
                                                target="_blank">
                                             <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
                                                  class="img-circle" alt="Link picture"></a>
                                         </td>
                                         <td>
-                                            @if (strpos($link->link, "https://") === 0)
-                                                <a href="{{ $link->link }}" target="_blank">
-                                                    {{ $link->description }}</a>
-                                            @else
                                                 <a href="https://{{ $link->link }}" target="_blank">
                                                     {{ $link->description }}</a>
-                                            @endif
                                         </td>
                                         <td>
                                             <form action="{{ route('link/delete') }}" method="post">

@@ -81,21 +81,14 @@
                                         @foreach($three as $link)
                                             <div class="col-3">
                                                 <div class="card-header">
-                                                    <h2> <a href="{{ $link->link }}" target="_blank">
+                                                    <h2> <a href="https://{{ $link->link }}" target="_blank">
                                                             {{ $link->description }}</a></h2>
                                                 </div>
                                                 <div class="card-body border-secondary">
-                                                    @if (strpos($link->link, "https://") === 0)
-                                                        <a href="{{ $link->link }}" target="_blank">
-                                                            <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
-                                                                 class="img-circle" alt="Link picture">
-                                                        </a>
-                                                    @else
                                                         <a href="https://{{ $link->link }}" target="_blank">
                                                             <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
                                                                  class="img-circle" alt="Link picture">
                                                             {{ $link->description }}</a>
-                                                    @endif
                                                     <hr>
                                                 </div>
                                             </div>
