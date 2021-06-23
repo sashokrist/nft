@@ -126,7 +126,7 @@
                             @endif
                         </div>
                         <div class="text-center">
-                            @foreach($tokens->chunk(5) as $three)
+                            @foreach($tokens->chunk(4) as $three)
                                 <div class="card border-primary">
                                     <div class="row">
                                         @foreach($three as $token)
