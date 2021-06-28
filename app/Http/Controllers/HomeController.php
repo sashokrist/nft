@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $links = Link::where('user_id', auth()->user()->id)->get();
+        $links = Link::where('user_id', auth()->user()->id)->orderBy('id', 'DESC')->get();
         //dd($links);
         return view('home', compact('links'));
     }

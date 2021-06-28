@@ -18,7 +18,7 @@ class LinkController extends Controller
     public function index()
     {
         $linkss = Link::inRandomOrder()->limit(4)->get();
-        $linksAll = Link::all();
+        $linksAll = Link::orderBy('id', 'DESC')->get();
 
         return view('welcome', compact('linkss', 'linksAll'));
     }
@@ -32,6 +32,7 @@ class LinkController extends Controller
     {
         $request->validate(
             [
+                'title' => 'required',
                 'link' => 'required',
                 'description' => 'required'
             ]
@@ -50,6 +51,7 @@ class LinkController extends Controller
 
         $link = new Link();
         $link->user_id = auth()->user()->id;
+        $link->title = $request->title;
         $link->link = $str;
         $link->description = $request->description;
         $link->picture = $imageName;

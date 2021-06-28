@@ -22,6 +22,10 @@
                         <form action="{{ route('link/store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
+                                <label for="title">Add Title</label>
+                                <input type="text" class="form-control" id="title" name="title"  placeholder="Add title">
+                            </div>
+                            <div class="form-group">
                                 <label for="link">Add Link</label>
                                 <input type="text" class="form-control" id="link" name="link"  placeholder="http://">
                             </div>
