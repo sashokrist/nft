@@ -36,6 +36,7 @@ class TokenController extends Controller
                 'price' => 'required'
             ]
         );
+        dd('Store token done');
 
     }
 }

@@ -9,24 +9,6 @@
                         <h1 class="text-center" style="color: blue">WELCOME TO NFTUBES</h1>
                         <h3 class="text-center">This is the place to share your NFT tokens</h3>
                         <hr>
-<!--                        <div class="text-center">
-                            @foreach($linkss->chunk(4) as $three)
-                                @foreach($three as $link)
-                                    @if (strpos($link->link, "https://") === 0)
-                                        <a href="{{ $link->link }}" target="_blank">
-                                            <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
-                                                 class="img-circle" alt="Link picture">
-                                            {{ $link->description }}</a>
-                                     @else
-                                        <a href="https://{{ $link->link }}" target="_blank">
-                                            <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
-                                                 class="img-circle" alt="Link picture">
-                                            {{ $link->description }}</a>
-                                    @endif
-                                @endforeach
-                                <hr>
-                            @endforeach
-                        </div>-->
                         <div class="text-center">
                             @foreach($linkss->chunk(4) as $three)
                                 <div class="card border-primary">
@@ -34,21 +16,13 @@
                                         @foreach($three as $link)
                                             <div class="col-3">
                                                 <div class="card-header">
-                                                    <h2> <a href="{{ $link->link }}" target="_blank">
+                                                    <h2> <a href="https://{{ $link->link }}" target="_blank">
                                                             {{ $link->description }}</a></h2>
                                                 </div>
                                                 <div class="card-body border-secondary">
-                                                    @if (strpos($link->link, "https://") === 0)
-                                                        <a href="{{ $link->link }}" target="_blank">
-                                                            <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
-                                                                 class="img-circle" alt="Link picture">
-                                                           </a>
-                                                    @else
                                                         <a href="https://{{ $link->link }}" target="_blank">
                                                             <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
-                                                                 class="img-circle" alt="Link picture">
-                                                            {{ $link->description }}</a>
-                                                    @endif
+                                                                 class="img-circle" alt="Link picture"></a>
                                                     <hr>
                                                 </div>
                                             </div>
@@ -87,8 +61,7 @@
                                                 <div class="card-body border-secondary">
                                                         <a href="https://{{ $link->link }}" target="_blank">
                                                             <img src="{{asset('images/'.$link->picture)}}" width="100" height="100"
-                                                                 class="img-circle" alt="Link picture">
-                                                            {{ $link->description }}</a>
+                                                                 class="img-circle" alt="Link picture"></a>
                                                     <hr>
                                                 </div>
                                             </div>

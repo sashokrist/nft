@@ -46,7 +46,7 @@ class LinkController extends Controller
 
 
         $str = $request->link;
-        // $str = preg_replace('#^https?://#', '', rtrim($str,'/'));
+        $str = preg_replace('#^https?://#', '', rtrim($str,'/'));
 
         $link = new Link();
         $link->user_id = auth()->user()->id;

@@ -119,7 +119,6 @@
                     <div class="card-body">
                         <h1 class="text-center" style="color: blue">COMING SOON</h1>
                         <h2 class="text-center" style="color: blue">NFT TOKENS</h2>
-                        <hr>
                         <div class="text-center">
                             @if (Auth::check())
                                 <a href="{{ route('token/create') }}" class="btn btn-primary m-2">Create Token</a>
@@ -131,7 +130,7 @@
                                     <div class="row">
                                         @foreach($three as $token)
                                             <div class="col-3">
-                                                <div class="card-header bg-primary">
+                                                <div class="card-header bg-primary m-2">
                                                    <h2>{{ $token->name }}</h2>
                                                 </div>
                                                <div class="card-body border-secondary">
@@ -141,7 +140,7 @@
                                                    <img src="{{asset('images/nft_token.png')}}" width="100" height="100"
                                                         class="img-circle" alt="Link picture">
                                                    <hr>
-                                                  <h2>{{ $token->price }} ETH</h2>
+                                                   <button type="submit" class="btn btn-primary">BUY {{ $token->price }} ETH</button>
                                                </div>
                                             </div>
                                         @endforeach

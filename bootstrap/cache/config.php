@@ -1,16 +1,16 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Nft',
+    'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://nft.test',
+    'url' => 'http://localhost',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:T0GmXN5sZtmzXog3U2t+5mH2HdoG/d3QjhP1QI5m+so=',
+    'key' => 'base64:G+S454rtTuS6KH7hT9mWcxR4gsiCWeXmI8tgSqS/R2I=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -183,7 +183,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/home/vagrant/code/fff/storage/framework/cache/data',
+        'path' => '/home/vagrant/code/nft/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -227,7 +227,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'nft_cache',
+    'prefix' => 'laravel_cache',
   ),
   'cors' => 
   array (
@@ -266,7 +266,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'nft',
+        'database' => 'tubes',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -276,7 +276,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'nft',
+        'database' => 'tubes',
         'username' => 'root',
         'password' => 'secret',
         'unix_socket' => '',
@@ -296,7 +296,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'nft',
+        'database' => 'tubes',
         'username' => 'root',
         'password' => 'secret',
         'charset' => 'utf8',
@@ -311,7 +311,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'nft',
+        'database' => 'tubes',
         'username' => 'root',
         'password' => 'secret',
         'charset' => 'utf8',
@@ -326,7 +326,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'nft_database_',
+        'prefix' => 'laravel_database_',
       ),
       'default' => 
       array (
@@ -354,13 +354,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/home/vagrant/code/fff/storage/app',
+        'root' => '/home/vagrant/code/nft/storage/app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/home/vagrant/code/fff/storage/app/public',
-        'url' => 'http://nft.test/storage',
+        'root' => '/home/vagrant/code/nft/storage/app/public',
+        'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
       's3' => 
@@ -377,7 +377,7 @@
     ),
     'links' => 
     array (
-      '/home/vagrant/code/fff/public/storage' => '/home/vagrant/code/fff/storage/app/public',
+      '/home/vagrant/code/nft/public/storage' => '/home/vagrant/code/nft/storage/app/public',
     ),
   ),
   'hashing' => 
@@ -411,13 +411,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/home/vagrant/code/fff/storage/logs/laravel.log',
+        'path' => '/home/vagrant/code/nft/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/home/vagrant/code/fff/storage/logs/laravel.log',
+        'path' => '/home/vagrant/code/nft/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -427,7 +427,7 @@
         'url' => NULL,
         'username' => 'Laravel Log',
         'emoji' => ':boom:',
-        'level' => 'debug',
+        'level' => 'critical',
       ),
       'papertrail' => 
       array (
@@ -468,7 +468,7 @@
       ),
       'emergency' => 
       array (
-        'path' => '/home/vagrant/code/fff/storage/logs/laravel.log',
+        'path' => '/home/vagrant/code/nft/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -480,8 +480,8 @@
       'smtp' => 
       array (
         'transport' => 'smtp',
-        'host' => 'mailhog',
-        'port' => '1025',
+        'host' => 'smtp.mailtrap.io',
+        'port' => '2525',
         'encryption' => NULL,
         'username' => NULL,
         'password' => NULL,
@@ -517,15 +517,15 @@
     ),
     'from' => 
     array (
-      'address' => NULL,
-      'name' => 'Nft',
+      'address' => 'hello@example.com',
+      'name' => 'Example',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/home/vagrant/code/fff/resources/views/vendor/mail',
+        0 => '/home/vagrant/code/nft/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -608,7 +608,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/home/vagrant/code/fff/storage/framework/sessions',
+    'files' => '/home/vagrant/code/nft/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -617,7 +617,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'nft_session',
+    'cookie' => 'laravel_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -628,9 +628,9 @@
   array (
     'paths' => 
     array (
-      0 => '/home/vagrant/code/fff/resources/views',
+      0 => '/home/vagrant/code/nft/resources/views',
     ),
-    'compiled' => '/home/vagrant/code/fff/storage/framework/views',
+    'compiled' => '/home/vagrant/code/nft/storage/framework/views',
   ),
   'flare' => 
   array (
