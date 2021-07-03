@@ -22,6 +22,7 @@ php artisan config:cache
 php artisan optimize
 
 Set database credentials
+
 5. php artisan migrate
 
 Open project on localhost:8000
