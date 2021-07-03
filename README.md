@@ -9,7 +9,7 @@
 
 ## About NFTTUBES
 
-NFTTUBES allow sharing NFT 'S from all over the world .
+NFTTUBES allow sharing NFT 'S from all over the world.  The idea is that every user who owns nft tokens, no matter what market they are in and what they represent as content , could create a profile on NFT TUBES and share them with the world . Without fees without wallets and settings. Internet is full now with marketplaces for nft tokens . Here anyone can share to search to like or communicate with other nft users. If you want to buy nft token that you liked ,just click on link and go to buy it.
 
 How to run it?
 1. git clone git@github.com:sashokrist/nft.git
