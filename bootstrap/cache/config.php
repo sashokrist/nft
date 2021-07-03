@@ -1,16 +1,16 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'NFTTUBES',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'http://nft.test',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:G+S454rtTuS6KH7hT9mWcxR4gsiCWeXmI8tgSqS/R2I=',
+    'key' => 'base64:ny3nfXJFIvw3GVuFHENsT7cr5dxvi1kOtqeNf8oh+G4=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -227,7 +227,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'laravel_cache',
+    'prefix' => 'nfttubes_cache',
   ),
   'cors' => 
   array (
@@ -266,7 +266,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'tubes',
+        'database' => 'nft',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -276,7 +276,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'tubes',
+        'database' => 'nft',
         'username' => 'root',
         'password' => 'secret',
         'unix_socket' => '',
@@ -296,7 +296,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'tubes',
+        'database' => 'nft',
         'username' => 'root',
         'password' => 'secret',
         'charset' => 'utf8',
@@ -311,7 +311,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'tubes',
+        'database' => 'nft',
         'username' => 'root',
         'password' => 'secret',
         'charset' => 'utf8',
@@ -326,7 +326,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'nfttubes_database_',
       ),
       'default' => 
       array (
@@ -360,7 +360,7 @@
       array (
         'driver' => 'local',
         'root' => '/home/vagrant/code/nft/storage/app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'http://nft.test/storage',
         'visibility' => 'public',
       ),
       's3' => 
@@ -427,7 +427,7 @@
         'url' => NULL,
         'username' => 'Laravel Log',
         'emoji' => ':boom:',
-        'level' => 'critical',
+        'level' => 'debug',
       ),
       'papertrail' => 
       array (
@@ -480,8 +480,8 @@
       'smtp' => 
       array (
         'transport' => 'smtp',
-        'host' => 'smtp.mailtrap.io',
-        'port' => '2525',
+        'host' => 'mailhog',
+        'port' => '1025',
         'encryption' => NULL,
         'username' => NULL,
         'password' => NULL,
@@ -517,8 +517,8 @@
     ),
     'from' => 
     array (
-      'address' => 'hello@example.com',
-      'name' => 'Example',
+      'address' => NULL,
+      'name' => 'NFTTUBES',
     ),
     'markdown' => 
     array (
@@ -617,7 +617,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'nfttubes_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
